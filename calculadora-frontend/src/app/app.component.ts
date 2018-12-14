@@ -23,7 +23,7 @@ export class AppComponent {
       operacao: this.operacao
     };
 
-    this.http.post('http://localhost:9090/calculadora',calculo).subscribe(response => this.response =response);
+    this.http.post('https://calculadoraricardomineli.herokuapp.com/api/calculadora',calculo).subscribe(response => this.response =response);
 
     console.log(calculo);
   }
