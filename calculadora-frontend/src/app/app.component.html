@@ -1,0 +1,35 @@
+
+
+<div>
+  <h1>Calculadora</h1>
+
+  <div>
+    <label for="numeorUm"> Informe o número um: </label>
+    <input id= "numeorUm" type="number" [(ngModel)] = "numeroUm">
+  </div>
+
+  <div>
+    <label for="numeorDois"> Informe o número dois: </label>
+    <input id= "numeorDois" type="number"[(ngModel)] = "numeroDois">
+  </div>
+
+  <div>
+    <label for="operacao"> Informe a operação: </label>
+    <select id="operacao" [(ngModel)]="operacao">
+      <option value="SOMA"> Operação de soma </option>
+      <option value="SUBTRACAO"> Operação de subtração</option>
+      <option value="DIVISAO"> Operação de divisão</option>
+      <option value="MULTIPLICACAO"> Operação de multiplicação</option>
+    </select>
+  </div>
+
+  <div>
+    <button style="background:green" (click) = "onClickExecutarOperacao()">Executar operação</button>
+  </div>
+
+  <div>
+    <h2 style="background: green">Resultado: {{response.resultado}}</h2>
+  </div>
+
+
+</div>
